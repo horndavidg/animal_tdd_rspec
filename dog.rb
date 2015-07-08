@@ -3,7 +3,9 @@ require_relative './animal'
 class Dog < Animal
 
 attr_reader :favorite_treat
-attr_accessor :name, :age, :sleeping
+# attr_accessor :name, :age, :sleeping
+# You don't need to repeat things that are already defined 
+# in the super class when inheriting
 
 @@favorite_treats = ["Hotdogs", "Carrots", "Duck"]
 

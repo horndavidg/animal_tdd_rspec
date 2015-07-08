@@ -3,7 +3,7 @@ require_relative './animal'
 class Cat < Animal
 
 # attr_reader 
-attr_accessor :name, :age, :sleeping
+# attr_accessor :name, :age, :sleeping
 
 
 def initialize(name,age)

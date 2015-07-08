@@ -8,6 +8,8 @@ describe Animal do
 	
 	describe "animal.name" do 
 	it "The animals name will be returned" do 
+		# You can add additional code here that you want 
+		# to run prior to the 'expect' statement
 		expect(animal.name).to eq("Peter")
 		end
 	end
