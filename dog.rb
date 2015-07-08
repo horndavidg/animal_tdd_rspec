@@ -4,6 +4,7 @@ class Dog < Animal
 
 attr_reader :favorite_treat
 # attr_accessor :name, :age, :sleeping
+
 # You don't need to repeat things that are already defined 
 # in the super class when inheriting
 
@@ -12,9 +13,8 @@ attr_reader :favorite_treat
 
 def initialize(name,age)
 super
-# @name = name
-# @age = age
-# @sleeping = true
+# super(name,age)
+
 @favorite_treat = @@favorite_treats.sample
 
 end
@@ -27,6 +27,7 @@ def self.favorite_treats
 	@@favorite_treats
 end
 
+# 'self' refers to this being a class method 
 def self.favorite_treats_add(treat)
 	@@favorite_treats << treat
 end
